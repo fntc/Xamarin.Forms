@@ -22,9 +22,13 @@
       <group targetFramework="MonoAndroid90">
         <reference file="Xamarin.Forms.Platform.Android.AppLinks.dll" />
       </group>
+      <group targetFramework="MonoAndroid10.0">
+        <reference file="Xamarin.Forms.Platform.Android.AppLinks.dll" />
+      </group>
     </references>
   </metadata>
   <files>
     <file src="..\Xamarin.Forms.Platform.Android.AppLinks\bin\$Configuration$\MonoAndroid90\90\Xamarin.Forms.Platform.Android.AppLinks.dll" target="lib\MonoAndroid90" />
+    <file src="..\Xamarin.Forms.Platform.Android.AppLinks\bin\$Configuration$\MonoAndroid10.0\10.0\Xamarin.Forms.Platform.Android.AppLinks.dll" target="lib\MonoAndroid10.0" />
   </files>
 </package>
