@@ -1,4 +1,4 @@
-﻿#if __ANDROID_28__
+﻿
 using System;
 using Android.Content;
 using Android.Support.Design.Widget;
@@ -71,4 +71,3 @@ namespace Xamarin.Forms.Material.Android
 		}
 	}
 }
-#endif

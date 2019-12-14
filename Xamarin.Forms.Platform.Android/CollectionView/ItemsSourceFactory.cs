@@ -1,7 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+#if __ANDROID_29__
+using AndroidX.AppCompat.Widget;
+#else
 using Android.Support.V7.Widget;
+#endif
 
 namespace Xamarin.Forms.Platform.Android
 {

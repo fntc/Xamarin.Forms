@@ -2,7 +2,11 @@ using System;
 using System.Linq;
 using Android.Graphics.Drawables;
 using Android.Support.V4.Content;
+#if __ANDROID_29__
+using AndroidX.AppCompat.Widget;
+#else
 using Android.Support.V7.Widget;
+#endif
 using Android.Util;
 
 namespace Xamarin.Forms.Platform.Android

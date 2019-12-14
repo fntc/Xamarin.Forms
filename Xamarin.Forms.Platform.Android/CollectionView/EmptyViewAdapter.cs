@@ -1,7 +1,11 @@
 using System;
 using Android.Content;
 using Android.Content.Res;
+#if __ANDROID_29__
+using AndroidX.AppCompat.Widget;
+#else
 using Android.Support.V7.Widget;
+#endif
 using Android.Views;
 using Object = Java.Lang.Object;
 

@@ -1,8 +1,16 @@
 ﻿using Android.Content;
 using Android.Graphics;
 using Android.Graphics.Drawables;
+#if __ANDROID_29__
+using AndroidX.Fragment.App;
+#else
 using Android.Support.V4.App;
+#endif
+#if __ANDROID_29__
+using AndroidX.Core.Widget;
+#else
 using Android.Support.V4.Widget;
+#endif
 using Android.Views;
 using Android.Widget;
 using System;

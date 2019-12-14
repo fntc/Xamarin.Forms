@@ -1,9 +1,21 @@
 ﻿using Android.OS;
 using Android.Runtime;
 using Android.Support.Design.Widget;
+#if __ANDROID_29__
+using AndroidX.Fragment.App;
+#else
 using Android.Support.V4.App;
+#endif
+#if __ANDROID_29__
+using AndroidX.Core.Widget;
+#else
 using Android.Support.V4.Widget;
+#endif
+#if __ANDROID_29__
+using AndroidX.AppCompat.Widget;
+#else
 using Android.Support.V7.Widget;
+#endif
 using Android.Views;
 using Android.Views.Animations;
 using System;

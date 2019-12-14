@@ -1,10 +1,14 @@
-﻿#if __ANDROID_28__
+﻿
 using System;
 using Android.Content;
 using Android.Support.Design.Widget;
 using Android.Runtime;
 using Android.Util;
+#if __ANDROID_29__
+using AndroidX.Core.View;
+#else
 using Android.Support.V4.View;
+#endif
 using Android.Content.Res;
 using AView = Android.Views.View;
 using Xamarin.Forms.Platform.Android.AppCompat;
@@ -148,4 +152,3 @@ namespace Xamarin.Forms.Material.Android
 		}
 	}
 }
-#endif

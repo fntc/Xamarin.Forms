@@ -2,7 +2,12 @@ using System;
 using System.ComponentModel;
 using Android.Content;
 using Android.Graphics;
+#if __ANDROID_29__
+using AndroidX.AppCompat.Widget;
+#else
 using Android.Support.V7.Widget;
+#endif
+#endif
 using Android.Util;
 using Android.Views;
 using Xamarin.Forms.Platform.Android.FastRenderers;

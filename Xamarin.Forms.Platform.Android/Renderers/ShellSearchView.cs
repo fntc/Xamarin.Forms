@@ -1,7 +1,11 @@
 ﻿using Android.Content;
 using Android.Graphics;
 using Android.Graphics.Drawables;
+#if __ANDROID_29__
+using AndroidX.AppCompat.Widget;
+#else
 using Android.Support.V7.Widget;
+#endif
 using Android.Text;
 using Android.Views;
 using Android.Views.InputMethods;

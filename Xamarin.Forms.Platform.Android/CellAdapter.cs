@@ -9,7 +9,11 @@ using Android.Widget;
 using AView = Android.Views.View;
 using AListView = Android.Widget.ListView;
 using Android.Graphics.Drawables;
+#if __ANDROID_29__
+using AndroidX.AppCompat.App;
+#else
 using Android.Support.V7.App;
+#endif
 using AActionMode = global::Android.Support.V7.View.ActionMode;
 
 namespace Xamarin.Forms.Platform.Android
