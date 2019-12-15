@@ -1,10 +1,10 @@
 ﻿using Android.OS;
 using Android.Runtime;
-using Android.Support.Design.Widget;
 #if __ANDROID_29__
 using AndroidX.Fragment.App;
 #else
 using Android.Support.V4.App;
+using Android.Support.Design.Widget;
 #endif
 #if __ANDROID_29__
 using AndroidX.Core.Widget;

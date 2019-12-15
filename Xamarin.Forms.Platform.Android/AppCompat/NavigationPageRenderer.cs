@@ -36,13 +36,13 @@ using FragmentTransaction = Android.Support.V4.App.FragmentTransaction;
 using AToolbar = Android.Support.V7.Widget.Toolbar;
 using ActionBarDrawerToggle = Android.Support.V7.App.ActionBarDrawerToggle;
 using Android.Support.V7.Graphics.Drawable;
+using Android.Support.V7.App;
 #endif
 
 using Object = Java.Lang.Object;
 using static Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.NavigationPage;
 using static Android.Views.View;
 using System.IO;
-using Android.Support.V7.App;
 using Android.Widget;
 
 namespace Xamarin.Forms.Platform.Android.AppCompat

@@ -27,6 +27,6 @@
   <!-- This is used by the libraries -->
   <PropertyGroup Condition="'$(AndroidTargetFrameworks)' == ''">
     <AndroidTargetFrameworks Condition="'$(MSBuildAssemblyVersion)' != '16.0'">MonoAndroid90;</AndroidTargetFrameworks>
-    <AndroidTargetFrameworks Condition="'$(MSBuildAssemblyVersion)' == '16.0'">MonoAndroid90;MonoAndroid10.0;</AndroidTargetFrameworks>
+    <AndroidTargetFrameworks Condition="'$(MSBuildAssemblyVersion)' == '16.0'">MonoAndroid90;</AndroidTargetFrameworks>
   </PropertyGroup>
 </Project>

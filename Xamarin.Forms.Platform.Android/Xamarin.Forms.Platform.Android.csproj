@@ -15,7 +15,14 @@
     <Compile Remove="AppCompat\Resource.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\**\*" />
+    <AndroidResource Include="Resources\anim\**\*" />
+    <AndroidResource Include="Resources\values\**\*" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'MonoAndroid10.0'">
+    <AndroidResource Include="Resources\Layout\X\**\*" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'MonoAndroid90'">
+    <AndroidResource Include="Resources\Layout\*" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Runtime.Serialization" />

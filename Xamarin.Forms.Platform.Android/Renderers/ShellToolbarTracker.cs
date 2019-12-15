@@ -8,6 +8,9 @@ using AndroidX.Core.Widget;
 using Android.Support.V4.Widget;
 #endif
 #if __ANDROID_29__
+using AndroidX.AppCompat.Graphics.Drawable;
+using AndroidX.DrawerLayout.Widget;
+using Google.Android.Material.AppBar;
 using AndroidX.AppCompat.Widget;
 using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
 using ADrawableCompat = AndroidX.Core.Graphics.Drawable.DrawableCompat;
@@ -30,9 +33,6 @@ using AView = Android.Views.View;
 using LP = Android.Views.ViewGroup.LayoutParams;
 using R = Android.Resource;
 using ATextView = global::Android.Widget.TextView;
-using AndroidX.AppCompat.Graphics.Drawable;
-using AndroidX.DrawerLayout.Widget;
-using Google.Android.Material.AppBar;
 
 namespace Xamarin.Forms.Platform.Android
 {
