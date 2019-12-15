@@ -16,20 +16,33 @@ using AndroidX.Core.Widget;
 #else
 using Android.Support.V4.Widget;
 #endif
-using Android.Support.V7.Graphics.Drawable;
 using Android.Util;
 using Android.Views;
 using Xamarin.Forms.Internals;
-using ActionBarDrawerToggle = Android.Support.V7.App.ActionBarDrawerToggle;
 using AView = Android.Views.View;
-using AToolbar = Android.Support.V7.Widget.Toolbar;
+#if __ANDROID_29__
+using Fragment = AndroidX.Fragment.App.Fragment;
+using FragmentManager = AndroidX.Fragment.App.FragmentManager;
+using FragmentTransaction = AndroidX.Fragment.App.FragmentTransaction;
+using AToolbar = AndroidX.AppCompat.Widget.Toolbar;
+using ActionBarDrawerToggle = AndroidX.AppCompat.App.ActionBarDrawerToggle;
+using AndroidX.AppCompat.Graphics.Drawable;
+using AndroidX.DrawerLayout.Widget;
+using AndroidX.AppCompat.App;
+#else
 using Fragment = Android.Support.V4.App.Fragment;
 using FragmentManager = Android.Support.V4.App.FragmentManager;
 using FragmentTransaction = Android.Support.V4.App.FragmentTransaction;
+using AToolbar = Android.Support.V7.Widget.Toolbar;
+using ActionBarDrawerToggle = Android.Support.V7.App.ActionBarDrawerToggle;
+using Android.Support.V7.Graphics.Drawable;
+#endif
+
 using Object = Java.Lang.Object;
 using static Xamarin.Forms.PlatformConfiguration.AndroidSpecific.AppCompat.NavigationPage;
 using static Android.Views.View;
 using System.IO;
+using Android.Support.V7.App;
 using Android.Widget;
 
 namespace Xamarin.Forms.Platform.Android.AppCompat
@@ -986,7 +999,7 @@ namespace Xamarin.Forms.Platform.Android.AppCompat
 						toggle.SyncState();
 					}
 
-					var activity = (global::Android.Support.V7.App.AppCompatActivity)context.GetActivity();
+					var activity = (AppCompatActivity)context.GetActivity();
 					var icon = new DrawerArrowDrawable(activity.SupportActionBar.ThemedContext);
 					icon.Progress = 1;
 					bar.NavigationIcon = icon;

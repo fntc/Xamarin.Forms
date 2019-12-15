@@ -13,7 +13,11 @@ using Xamarin.Forms.Internals;
 using AndroidX.Core.Widget;
 #else
 using Android.Support.V4.Widget;
+#if __ANDROID_29__
+using AndroidX.Core.Content;
+#else
 using Android.Support.V4.Content;
+#endif
 #endif
 using Android.OS;
 using System;

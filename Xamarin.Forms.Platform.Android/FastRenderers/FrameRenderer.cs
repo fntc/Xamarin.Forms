@@ -4,6 +4,7 @@ using Android.Content;
 using Android.Graphics.Drawables;
 #if __ANDROID_29__
 using AndroidX.Core.View;
+using AndroidX.CardView.Widget;
 #else
 using Android.Support.V4.View;
 #endif

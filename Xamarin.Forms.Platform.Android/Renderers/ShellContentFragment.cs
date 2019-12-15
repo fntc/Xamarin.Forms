@@ -13,6 +13,8 @@ using Android.Support.V4.Widget;
 #endif
 #if __ANDROID_29__
 using AndroidX.AppCompat.Widget;
+using AndroidX.CoordinatorLayout.Widget;
+using Google.Android.Material.AppBar;
 #else
 using Android.Support.V7.Widget;
 #endif

@@ -4,17 +4,13 @@ using Android.Content;
 using Android.OS;
 #if __ANDROID_29__
 using AndroidX.Core.View;
-#else
-using Android.Support.V4.View;
-#endif
-#if __ANDROID_29__
 using AndroidX.Core.Widget;
-#else
-using Android.Support.V4.Widget;
-#endif
-#if __ANDROID_29__
+using AndroidX.RecyclerView.Widget;
+using AndroidX.SwipeRefreshLayout.Widget;
 using AndroidX.AppCompat.Widget;
 #else
+using Android.Support.V4.Widget;
+using Android.Support.V4.View;
 using Android.Support.V7.Widget;
 #endif
 using Android.Views;

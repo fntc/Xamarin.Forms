@@ -3,6 +3,8 @@ using Android.Graphics.Drawables;
 using Android.Support.Design.Widget;
 #if __ANDROID_29__
 using AndroidX.AppCompat.Widget;
+using AndroidX.RecyclerView.Widget;
+using Google.Android.Material.AppBar;
 #else
 using Android.Support.V7.Widget;
 #endif

@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using Android.Content;
 using Android.OS;
+#if __ANDROID_29__
+using AndroidX.Core.Content;
+#else
 using Android.Support.V4.Content;
+#endif
 #if __ANDROID_29__
 using AndroidX.AppCompat.Widget;
 #else

@@ -1,6 +1,7 @@
 using System;
 #if __ANDROID_29__
 using AndroidX.AppCompat.Widget;
+using AndroidX.RecyclerView.Widget;
 #else
 using Android.Support.V7.Widget;
 #endif

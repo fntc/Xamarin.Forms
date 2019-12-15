@@ -4,6 +4,7 @@ using System.Linq;
 using Android.Content;
 #if __ANDROID_29__
 using AndroidX.Core.View;
+using AndroidX.ViewPager.Widget;
 #else
 using Android.Support.V4.View;
 #endif

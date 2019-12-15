@@ -7,7 +7,6 @@ using AndroidX.AppCompat.Widget;
 #else
 using Android.Support.V7.Widget;
 #endif
-#endif
 using Android.Util;
 using Android.Views;
 using Xamarin.Forms.Platform.Android.FastRenderers;

@@ -10,6 +10,7 @@ using Android.Support.V4.Widget;
 using Android.Views;
 #if __ANDROID_29__
 using AndroidX.Fragment.App;
+using AndroidX.DrawerLayout.Widget;
 #else
 using Android.Support.V4.App;
 #endif

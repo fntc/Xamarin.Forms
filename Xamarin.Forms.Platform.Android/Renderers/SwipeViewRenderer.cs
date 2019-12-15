@@ -7,8 +7,11 @@ using Android.Graphics;
 using Android.Graphics.Drawables;
 #if __ANDROID_29__
 using AndroidX.Core.Widget;
+using AButton = AndroidX.AppCompat.Widget.AppCompatButton;
+using AndroidX.RecyclerView.Widget;
 #else
 using Android.Support.V4.Widget;
+using AButton = Android.Support.V7.Widget.AppCompatButton;
 #endif
 #if __ANDROID_29__
 using AndroidX.AppCompat.Widget;
@@ -19,7 +22,6 @@ using Android.Views;
 using Android.Widget;
 using Xamarin.Forms.Internals;
 using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
-using AButton = Android.Support.V7.Widget.AppCompatButton;
 using APointF = Android.Graphics.PointF;
 using ATextAlignment = Android.Views.TextAlignment;
 using AView = Android.Views.View;
