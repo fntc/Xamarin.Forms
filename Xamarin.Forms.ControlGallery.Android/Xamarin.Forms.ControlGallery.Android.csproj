@@ -325,6 +325,9 @@
     <PackageReference Include="Xam.Plugin.DeviceInfo">
       <Version>3.0.2</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Migration">
+      <Version>1.0.0-preview06</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Build.Download">
       <Version>0.7.1</Version>
     </PackageReference>

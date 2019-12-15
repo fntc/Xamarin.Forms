@@ -4,15 +4,16 @@ using System.ComponentModel;
 using Android.Content;
 #if __ANDROID_29__
 using AndroidX.Core.View;
+using MaterialCardView = Google.Android.Material.Card.MaterialCardView;
 #else
 using Android.Support.V4.View;
+using MaterialCardView = Android.Support.Design.Card.MaterialCardView;
 #endif
 using Android.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android.FastRenderers;
 using Xamarin.Forms.Material.Android;
 using AView = Android.Views.View;
-using MaterialCardView = Android.Support.Design.Card.MaterialCardView;
 using Xamarin.Forms.Platform.Android;
 
 
