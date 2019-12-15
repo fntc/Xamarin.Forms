@@ -17,12 +17,20 @@
   <ItemGroup>
     <AndroidResource Include="Resources\anim\**\*" />
     <AndroidResource Include="Resources\values\**\*" />
+    <Compile Remove="Resources\Layout\**\*" />
+    <None Include="Resources\Layout\**\*" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'MonoAndroid10.0'">
-    <AndroidResource Include="Resources\Layout\X\**\*" />
+    <AndroidResource Link="Resources\Layout\BottomTabLayout.axml" Include="Resources\Layout\AndroidX\BottomTabLayout.axml" />
+    <AndroidResource Link="Resources\Layout\FlyoutContent.axml" Include="Resources\Layout\AndroidX\FlyoutContent.axml" />
+    <AndroidResource Link="Resources\Layout\RootLayout.axml" Include="Resources\Layout\AndroidX\RootLayout.axml" />
+    <AndroidResource Link="Resources\Layout\ShellContent.axml" Include="Resources\Layout\AndroidX\ShellContent.axml" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'MonoAndroid90'">
-    <AndroidResource Include="Resources\Layout\*" />
+    <AndroidResource Link="Resources\Layout\BottomTabLayout.axml" Include="Resources\Layout\Android\BottomTabLayout.axml" />
+    <AndroidResource Link="Resources\Layout\FlyoutContent.axml" Include="Resources\Layout\Android\FlyoutContent.axml" />
+    <AndroidResource Link="Resources\Layout\RootLayout.axml" Include="Resources\Layout\Android\RootLayout.axml" />
+    <AndroidResource Link="Resources\Layout\ShellContent.axml" Include="Resources\Layout\Android\ShellContent.axml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Runtime.Serialization" />
