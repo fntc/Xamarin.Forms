@@ -84,7 +84,7 @@ jobs:
         codeCoverageEnabled: true
         testRunTitle: '$(BuildConfiguration)_UnitTests'
         configuration: '$(BuildConfiguration)'
-        vsTestVersion: '15.0'
+        vsTestVersion: '16.0'
         diagnosticsEnabled: true
 
     - task: CopyFiles@2
