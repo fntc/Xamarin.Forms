@@ -17,6 +17,14 @@
       <group>
         <dependency id="Xamarin.Forms" version="$version$"/>
       </group>
+      <group targetFramework="MonoAndroid10.0">
+        <dependency id="Xamarin.AndroidX.Migration" version="1.0.0-preview06"/>
+        <dependency id="Xamarin.AndroidX.Lifecycle.LiveData" version="2.0.0-preview02"/>
+        <dependency id="Xamarin.AndroidX.Legacy.Support.Core.UI" version="1.0.0-preview02"/>
+        <dependency id="Xamarin.AndroidX.AppCompat" version="1.0.2-preview02"/>
+        <dependency id="Xamarin.GooglePlayServices.Maps" version="71.1610.0"/>
+        <dependency id="Xamarin.Forms" version="$version$"/>
+      </group>
       <group targetFramework="MonoAndroid90">
         <dependency id="Xamarin.GooglePlayServices.Maps" version="71.1610.0"/>
         <dependency id="Xamarin.Android.Support.v7.AppCompat" version="28.0.0.3"/>
