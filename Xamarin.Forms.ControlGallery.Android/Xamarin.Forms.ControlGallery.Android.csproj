@@ -15,7 +15,7 @@
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <AndroidTargetFrameworkVersion Condition="$(AndroidTargetFrameworkVersion) == ''">v9.0</AndroidTargetFrameworkVersion>
+    <AndroidTargetFrameworkVersion Condition="$(AndroidTargetFrameworkVersion) == ''">v10.0</AndroidTargetFrameworkVersion>
     <TargetFrameworkVersion>$(AndroidTargetFrameworkVersion)</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -333,6 +333,11 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData" Version="2.0.0-preview02" />
+    <PackageReference Include="Xamarin.AndroidX.Browser" Version="1.0.0-preview02" />
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.0.0-preview02" />
+    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.V4" Version="1.0.0-preview02" />
+    <PackageReference Include="Xamarin.AndroidX.Palette" Version="1.0.0-preview02" />
     <PackageReference Include="Xamarin.Android.Support.Animated.Vector.Drawable" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.Annotations" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.Compat" Version="28.0.0.3" />
