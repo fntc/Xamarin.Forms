@@ -107,7 +107,7 @@ namespace Xamarin.Forms.Platform.Android.FastRenderers
 
         async static Task TryUpdateBitmap(IImageRendererController rendererController, ImageView Control, IImageElement newImage, IImageElement previous = null)
         {
-            if (newImage == null || rendererController.IsDisposed)
+            if (newImage == null || rendererController.IsDisposed || Control.IsDisposed)
             {
                 return;
             }
@@ -136,6 +136,7 @@ namespace Xamarin.Forms.Platform.Android.FastRenderers
                     imageController.SetIsLoading(false);
             }
 
+			//BUG: ObjectDisposedException here!
 			if (Control.Drawable is FormsAnimationDrawable updatedAnimation)
 			{
 				rendererController.SetFormsAnimationDrawable(updatedAnimation);
